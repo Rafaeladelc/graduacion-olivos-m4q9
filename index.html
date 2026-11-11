@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Graduación Los Olivos 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Dirección: negro, blanco y rojo de la marca; titulares en Bodoni, texto en Jost; bloques de fecha como tickets. */
+  --paper:#f7f6f4; --card:#ffffff; --ink:#141414; --muted:#5f5f5c; --line:#e2e0dc;
+  --red:#b3122d; --red-ink:#ffffff; --band:#141414; --band-ink:#ffffff; --soft:#f1efec;
+  --display:'Bodoni Moda','Didot','Times New Roman',serif; --body:'Jost','Helvetica Neue',Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e0e0f; --card:#18181a; --ink:#f3f1ee; --muted:#a9a7a2; --line:#2e2e31;
+    --red:#ee5a72; --red-ink:#140508; --band:#000000; --band-ink:#ffffff; --soft:#222225; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0e0e0f; --card:#18181a; --ink:#f3f1ee; --muted:#a9a7a2; --line:#2e2e31;
+  --red:#ee5a72; --red-ink:#140508; --band:#000000; --band-ink:#ffffff; --soft:#222225; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+.wrap{max-width:820px;margin:0 auto;padding:0 18px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px;border-radius:4px}
+
+.hero{background:var(--band);color:var(--band-ink);padding:34px 0 30px}
+.brand{font-size:12px;letter-spacing:.42em;text-transform:uppercase;margin:0 0 26px;opacity:.9}
+.hero h1{font-family:var(--display);font-weight:500;font-size:clamp(34px,8vw,58px);line-height:1.04;margin:0 0 6px;text-wrap:balance}
+.hero .sede{font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:#ff8a9d;margin:0 0 22px}
+.when{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:baseline;margin:0}
+.when strong{font-family:var(--display);font-size:clamp(22px,5vw,30px);font-weight:500}
+.when span{opacity:.85}
+.count{display:inline-block;margin-top:18px;padding:6px 14px;border:1px solid rgba(255,255,255,.35);border-radius:99px;font-size:15px}
+
+.nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:8px;padding-bottom:8px}
+.nav a{white-space:nowrap;text-decoration:none;font-size:14px;padding:6px 12px;border-radius:99px;color:var(--muted)}
+.nav a:hover{background:var(--soft);color:var(--ink)}
+
+section{padding:36px 0 8px}
+h2{font-family:var(--display);font-weight:500;font-size:clamp(26px,5.5vw,34px);line-height:1.15;margin:0 0 6px;text-wrap:balance}
+.lead{color:var(--muted);margin:0 0 20px;max-width:62ch}
+.stack{display:grid;gap:16px}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card-h{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+.card-h h3{font-size:19px;line-height:1.25;margin:0;font-weight:600;text-wrap:balance}
+.num{flex:none;width:30px;height:30px;border-radius:50%;background:var(--red);color:var(--red-ink);display:grid;place-items:center;font-weight:600;font-size:15px}
+.slots{display:grid;gap:12px;margin-bottom:12px}
+.slot{display:flex;gap:14px;align-items:center}
+.datebox{flex:none;width:92px;background:var(--soft);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:8px;text-align:center;padding:6px 4px 8px;display:grid;line-height:1.1}
+.d-top{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.d-big{font-family:var(--display);font-size:27px;font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.d-bot{font-size:12px;color:var(--muted)}
+.slot-date{margin:0;font-weight:600}
+.slot-hour{margin:0;color:var(--muted)}
+.where{margin:8px 0}
+.label{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:600;margin-right:6px}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px}
+.btn{display:inline-block;padding:9px 16px;border:1.5px solid var(--ink);border-radius:99px;text-decoration:none;font-size:15px;font-weight:500}
+.btn:hover{background:var(--soft)}
+.btn-solid{background:var(--red);border-color:var(--red);color:var(--red-ink)}
+.btn-solid:hover{background:var(--red);filter:brightness(1.08)}
+.notes{margin:12px 0 0;padding-left:20px;color:var(--ink)}
+.notes li{margin:4px 0}
+.sched{width:100%;border-collapse:collapse;margin:4px 0 8px;font-size:16px}
+.sched caption{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:600;padding-bottom:4px}
+.sched th,.sched td{text-align:left;padding:8px 10px;border-top:1px solid var(--line)}
+.sched th{font-weight:500}
+.sched td{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap;text-align:right}
+
+.beige{margin-top:14px;padding:14px 16px;background:var(--soft);border-radius:10px}
+.beige h4{margin:0 0 4px;font-size:16px}
+.beige p{margin:0 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.chip{font-size:14px;padding:3px 11px;border:1px solid var(--line);border-radius:99px;background:var(--card)}
+
+.looks{display:grid;gap:10px}
+.look{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.look summary{list-style:none;cursor:pointer;padding:16px 18px;display:grid;gap:2px}
+.look summary::-webkit-details-marker{display:none}
+.look-taller{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.look-pais{font-size:15px;font-weight:600}
+.look-name{font-family:var(--display);font-style:italic;font-size:24px;color:var(--red);line-height:1.2}
+.look-more{font-size:13px;color:var(--muted);margin-top:6px}
+.look-more::after{content:" +"}
+.look[open] .look-more::after{content:" −"}
+.tag{justify-self:start;margin-top:6px;font-size:12px;padding:2px 10px;border-radius:99px;background:var(--soft);border:1px dashed var(--muted);color:var(--muted)}
+.look-body{padding:2px 18px 18px}
+.look-body ul{margin:0 0 14px;padding-left:20px}
+.look-body li{margin:5px 0}
+.look-body img{display:block;width:100%;height:auto;border-radius:8px;border:1px solid var(--line)}
+
+.rec{margin-top:16px;border-left:4px solid var(--red);background:var(--card);border-radius:0 12px 12px 0;padding:14px 18px;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rec h3{margin:0 0 6px;font-size:17px}
+.rec ul{margin:0;padding-left:20px}
+.rec li{margin:4px 0}
+
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.tl{display:grid;grid-template-columns:84px 1fr;gap:0 14px;position:relative;padding-bottom:18px}
+.tl:last-child{padding-bottom:0}
+.tl::before{content:"";position:absolute;left:41px;top:34px;bottom:-2px;width:2px;background:var(--line)}
+.tl:last-child::before{display:none}
+.tl-time{align-self:start;text-align:center;background:var(--band);color:var(--band-ink);border-radius:8px;padding:6px 4px;font-family:var(--display);font-size:19px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.2}
+.tl-time small{display:block;font-family:var(--body);font-weight:400;font-size:11px;letter-spacing:.08em;opacity:.8}
+.tl-body{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.tl-body h3{margin:0 0 4px;font-size:18px}
+.tl-body p{margin:6px 0}
+.tl-body ul{margin:6px 0 0;padding-left:20px}
+.tl-body li{margin:4px 0}
+
+.place{margin-top:16px}
+.warn{margin-top:16px;background:var(--band);color:var(--band-ink);border-radius:14px;padding:18px 20px}
+.warn h3{margin:0 0 8px;font-family:var(--display);font-weight:500;font-size:22px}
+.warn ul{margin:0;padding-left:20px}
+.warn li{margin:6px 0}
+.warn strong{color:#ff8a9d}
+.bag{display:grid;gap:12px;margin-top:16px}
+
+.faq{display:grid;gap:10px}
+.qa{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:0 12px 12px 0;padding:14px 18px}
+.qa h3{margin:0 0 4px;font-size:17px;line-height:1.3;text-wrap:balance}
+.qa p{margin:0;color:var(--muted)}
+
+footer{margin-top:44px;padding:26px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center}
+footer b{letter-spacing:.3em;text-transform:uppercase;font-weight:500;color:var(--ink)}
+
+@media (max-width:420px){
+  body{font-size:16px}
+  .datebox{width:84px}
+  .tl{grid-template-columns:70px 1fr;gap:0 10px}
+  .tl::before{left:34px}
+}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <p class="brand">Marina Mora Escuela</p>
+  <h1>Graduación Fin de Año 2026</h1>
+  <p class="sede">Sede Los Olivos</p>
+  <p class="when"><strong>Domingo 13 de diciembre</strong><span>12:00 m. · Gamma Moda Plaza, 5.º piso</span></p>
+  <span class="count" id="count">Domingo 13 de diciembre</span>
+</div></header>
+
+<nav class="nav" aria-label="Secciones"><div class="wrap">
+  <a href="#antes">Antes del evento</a><a href="#vestuario">Dress code</a><a href="#dia">Día de la graduación</a><a href="#preguntas">Preguntas frecuentes</a>
+</div></nav>
+
+<main class="wrap">
+<section id="antes">
+  <h2>Antes del evento</h2>
+  <p class="lead">Dos citas previas. Revisa las fechas y el lugar de tu sede.</p>
+  <div class="stack"><article class="card"><header class="card-h"><span class="num">1</span><h3>Asesoría de imagen</h3></header><div class="slots"><div class="slot"><div class="datebox" aria-hidden="true"><span class="d-top">Jueves y viernes</span><span class="d-big">26 · 27</span><span class="d-bot">noviembre</span></div><div class="slot-info"><p class="slot-date">Jueves 26 y viernes 27 de noviembre</p></div></div><div class="slot"><div class="datebox" aria-hidden="true"><span class="d-top">Martes y miércoles</span><span class="d-big">01 · 02</span><span class="d-bot">diciembre</span></div><div class="slot-info"><p class="slot-date">Martes 1 y miércoles 2 de diciembre</p></div></div></div><p class="where"><span class="label">Lugar</span> En vivo por Zoom</p><div class="btns"><a class="btn btn-solid" href="https://us06web.zoom.us/j/85903943314?pwd=z6IBbW0edZQ0hZU3bLtd6XJFAWBanA.1" target="_blank" rel="noopener">Unirme por Zoom</a></div><ul class="notes"><li>Debes solicitar agendar tu asesoría en una de las 2 fechas. Una vez que ingresas, la asesoría dura máximo 10 minutos.</li><li>Solo es la asesoría del dress code del desfile de graduación.</li><li>La alumna se conecta ya vestida con el dress code asignado para el desfile de graduación y sus accesorios.</li></ul></article><article class="card"><header class="card-h"><span class="num">2</span><h3>Shooting pre graduación · Día de fotos en estudio</h3></header><div class="slots"><div class="slot"><div class="datebox" aria-hidden="true"><span class="d-top">Domingo</span><span class="d-big">06</span><span class="d-bot">diciembre</span></div><div class="slot-info"><p class="slot-date">Domingo 06 de diciembre</p><p class="slot-hour">De 9:00 am a 1:00 pm</p></div></div></div><p class="where"><span class="label">Lugar</span> Marina Mora Escuela · Av. Reducto 971</p><div class="btns"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Marina+Mora+Escuela+Av.+Reducto+971+Miraflores+Lima" target="_blank" rel="noopener">Cómo llegar</a></div><ul class="notes"><li>Por orden de llegada. Ingresa solo la alumna. La sesión no toma más de 5 minutos por alumna.</li></ul><div class="beige"><h4>Dress code: Total Beige</h4><p>Tacos obligatorios (las niñas llevan sus taquitos). Cabello bien arreglado y maquillaje a elección, acorde al outfit.</p><div class="chips"><span class="chip">Taller Niñas</span><span class="chip">Taller Básico y Taller Damas</span><span class="chip">Taller Avanzado y Profesional</span></div><details class="look" style="margin-top:10px"><summary><span class="look-more" style="margin:0">Ver referencias Total Beige</span></summary><div class="look-body"><img loading="lazy" src="img/beige-talleres.jpg" alt="Referencias Total Beige para Pre Teens, Señoritas, Básicos, Avanzado, Profesional y Damas" width="1100"><img loading="lazy" style="margin-top:10px" src="img/beige-ninas.jpg" alt="Referencias Total Beige para el taller de niñas" width="1100"></div></details></div></article></div>
+</section>
+
+<section id="vestuario">
+  <h2>Guía de vestuario del 13/12 · Acto de Graduación</h2>
+  <p class="lead">Toca el taller de la alumna para ver el detalle y las imágenes de referencia del dress code del desfile.</p>
+  <div class="looks"><details class="look" id="look-ninas"><summary><span class="look-taller">Taller Niñas · 4 a 10 años</span><span class="look-pais">Sudáfrica</span><span class="look-name">Safari</span><span class="look-more">Ver detalle y referencias</span></summary><div class="look-body"><ul><li><strong>Colores.</strong> Tonos tierra neutros: blanco, negro, gris, beige, verde, ocre.</li><li><strong>Accesorios.</strong> Sombrero, lentes, pañuelo, cinturón o correa, bolsito o canguro.</li><li><strong>Peinado.</strong> Cabello recogido con moño, cola o trenza.</li><li><strong>Maquillaje.</strong> Natural, pestañas rizadas y brillo rosa en labios y mejillas.</li></ul><img loading="lazy" src="img/sudafrica.jpg" alt="Referencias del look Safari para el taller de niñas" width="1100"></div></details><details class="look" id="look-basico"><summary><span class="look-taller">Taller Básico</span><span class="look-pais">Corea</span><span class="look-name">K-Pop</span><span class="look-more">Ver detalle y referencias</span></summary><div class="look-body"><ul><li><strong>Maquillaje.</strong> Juvenil, fresco y luminoso. Piel natural y radiante, ojos definidos, sombras suaves, labios degradados y rubor.</li><li><strong>Peinado.</strong> Lacio o recogido.</li><li><strong>Accesorios.</strong> Los que acompañan el look.</li></ul><img loading="lazy" src="img/corea.jpg" alt="Referencias del look K-Pop para el taller básico" width="1100"></div></details><details class="look" id="look-avanzado"><summary><span class="look-taller">Taller Avanzado · Señoritas</span><span class="look-pais">India</span><span class="look-name">Fiesta Bollywood</span><span class="look-more">Ver detalle y referencias</span></summary><div class="look-body"><ul><li><strong>Maquillaje.</strong> Intenso, elegante y lleno de color. Ojos delineados, sombras brillantes, pestañas abundantes, piel luminosa, rubor y labios en tonos rojos, rosados o nude.</li><li><strong>Peinado.</strong> A elección, decorado con accesorios y joyas en el cabello.</li><li><strong>Accesorios.</strong> Pedrería dorada o plateada.</li></ul><img loading="lazy" src="img/india.jpg" alt="Referencias del look Fiesta Bollywood para el taller avanzado" width="1100"></div></details><details class="look" id="look-profesional"><summary><span class="look-taller">Taller Profesional</span><span class="look-pais">Perú</span><span class="look-name">Alta Costura Andina</span><span class="look-more">Ver detalle y referencias</span></summary><div class="look-body"><ul><li><strong>Vestuario.</strong> Vestido largo o conjunto de alta costura con motivos inspirados en el Perú.</li><li><strong>Maquillaje en tonos cálidos.</strong> Sombras doradas y marrones, rubor salmón, labios nude.</li><li><strong>Maquillaje en tonos fríos.</strong> Sombras azules, grises y rosa, rubor y labios en rosa frío o vino.</li><li><strong>Peinado.</strong> Opción 1: cabello recogido. Opción 2: cabello suelto en ondas con raya lateral.</li><li><strong>Accesorios.</strong> Sandalias a juego con el vestido y joyería con strass.</li></ul><img loading="lazy" src="img/peru.jpg" alt="Referencias del look Alta Costura Andina para el taller profesional" width="1100"></div></details><details class="look" id="look-damas"><summary><span class="look-taller">Taller Damas · Básico y Avanzado</span><span class="look-pais">Grecia</span><span class="look-name">Atardecer en Santorini</span><span class="tag">Damas Avanzado: por confirmar</span><span class="look-more">Ver detalle y referencias</span></summary><div class="look-body"><ul><li><strong>Maquillaje en tonos cálidos.</strong> Sombras doradas y marrones, rubor salmón, labios nude.</li><li><strong>Maquillaje en tonos fríos.</strong> Sombras azules, grises y rosa, rubor y labios en rosa frío o vino.</li></ul><img loading="lazy" src="img/grecia.jpg" alt="Referencias del look Atardecer en Santorini para el taller damas" width="1100"></div></details></div>
+  <div class="rec"><h3>Recomendaciones para todas</h3><ul>
+    <li>No se aceptan zapatillas, sandalias planas, balerinas, mocasines ni flats.</li>
+    <li>Uñas de manos y pies pintadas en tono nude o francesa.</li>
+    <li>Traer pestañas postizas de tamaño natural.</li>
+  </ul></div>
+</section>
+
+<section id="dia">
+  <h2>Día de la graduación</h2>
+  <p class="lead">Domingo 13 de diciembre. El acto empieza a las 12:00 m., sujeto a cambio según la duración del ensayo.</p>
+
+  <article class="card place">
+    <header class="card-h"><span class="num" aria-hidden="true">★</span><h3>Gamma Moda Plaza · 5.º piso</h3></header>
+    <p class="where"><span class="label">Entrada 1</span> Av. Aviación 950, La Victoria (entrada trasera y entrada de vehículos)</p>
+    <p class="where"><span class="label">Entrada 2</span> Agustín Gamarra 1275, La Victoria</p>
+    <div class="btns">
+      <a class="btn btn-solid" href="https://www.google.com/maps/search/?api=1&query=Gamma+Moda+Plaza+Av.+Aviaci%C3%B3n+950+La+Victoria+Lima" target="_blank" rel="noopener">Cómo llegar por Aviación</a>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Agust%C3%ADn+Gamarra+1275+La+Victoria+Lima" target="_blank" rel="noopener">Cómo llegar por Gamarra</a>
+    </div>
+  </article>
+
+  <ol class="timeline" style="margin-top:20px">
+    <li class="tl"><div class="tl-time">9:00<small>AM</small></div><div class="tl-body">
+      <h3>Ensayo e indicaciones generales</h3>
+      <p>Ingresan todas las alumnas para el ensayo. El Taller de Niñas ingresa con su apoderado al camerino (solo mamá).</p>
+      <ul>
+        <li>Todas las graduadas llegan listas: con el vestuario asignado y ya aprobado en la asesoría de imagen, maquilladas y peinadas.</li>
+        <li>Solo las alumnas del Taller Profesional llegan con outfit de ensayo para el opening.</li>
+      </ul></div></li>
+    <li class="tl"><div class="tl-time">Antes<small>DEL ACTO</small></div><div class="tl-body">
+      <h3>Ingreso de invitados</h3>
+      <p>Ingresan por orden de llegada.</p>
+      <ul><li><strong>Importante:</strong> está prohibido guardar cola, querer ingresar antes o esperar en el acceso indicado por el Staff fuera de la hora.</li></ul></div></li>
+    <li class="tl"><div class="tl-time">12:00<small>M.</small></div><div class="tl-body">
+      <h3>Inicio del acto de graduación</h3>
+      <p>Sujeto a cambio según la duración del ensayo preliminar.</p>
+      <p>Se realizan 2 desfiles:</p>
+      <ul><li>1.º Desfile con el outfit asignado en el dress code de graduación.</li>
+          <li>2.º Desfile con el uniforme de la escuela.</li></ul></div></li>
+    <li class="tl"><div class="tl-time">2:00<small>PM</small></div><div class="tl-body">
+      <h3>Fin del acto de graduación</h3></div></li>
+  </ol>
+
+  <div class="warn" role="note">
+    <h3>No olvides</h3>
+    <ul>
+      <li><strong>El uniforme completo de la escuela es obligatorio.</strong> La alumna que no lo trae no puede salir en el 2.º desfile.</li>
+      <li>Una mochila, bolso o maleta rotulada con el nombre de la alumna (tamaño máximo tipo carry on, 55 x 35 cm), donde guarde todas sus pertenencias. Cada alumna se hace responsable de lo que trae.</li>
+      <li>Dentro de la maleta: uniforme completo (polo, short o falda short, y tacos) y maquillaje o lo que necesite para retocarse.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="preguntas">
+  <h2>Preguntas frecuentes</h2>
+  <p class="lead">Lo que más nos preguntan antes del evento.</p>
+  <div class="faq"><div class="qa"><h3>¿Cuántas entradas recibe cada alumna graduada?</h3><p>Se entregan 2 entradas por alumna. Las alumnas no requieren entrada.</p></div><div class="qa"><h3>¿A qué hora pueden ingresar los invitados?</h3><p>Desde la hora en que se convoca a las alumnas. Pueden llegar hasta la hora de inicio del evento: 12:00 del mediodía.</p></div><div class="qa"><h3>¿Se pueden llevar niños?</h3><p>Sí, se pueden llevar niños mayores de 6 años. Deben mantenerse en su asiento.</p></div><div class="qa"><h3>¿Me pueden prestar tacos o polos el día del evento?</h3><p>No. No se realizan préstamos.</p></div><div class="qa"><h3>¿Puedo desfilar si no tengo el uniforme?</h3><p>Definitivamente no. Para desfilar se debe tener el uniforme completo.</p></div><div class="qa"><h3>Si no tengo mi brazalete (entrada), ¿puedo entrar?</h3><p>Definitivamente no. Una vez recibidos los brazaletes, deben llegar con estos colocados.</p></div><div class="qa"><h3>¿Puedo retirar o comprar entradas el día de la graduación?</h3><p>No. Las entradas deben ser recogidas o compradas como máximo el día previo a la graduación.</p></div></div>
+</section>
+</main>
+
+<footer><div class="wrap"><b>Marina Mora Escuela</b><br>Graduación Fin de Año 2026 · Sede Los Olivos</div></footer>
+
+<script>
+(function(){
+  var el=document.getElementById('count');
+  if(!el)return;
+  var target=new Date('2026-12-13T12:00:00-05:00').getTime();
+  var now=Date.now();
+  var day=86400000;
+  var days=Math.ceil((target-now)/day);
+  if(target-now<=-2*3600000){el.textContent='La graduación ya se realizó';return;}
+  if(days<=0){el.textContent='La graduación es hoy';return;}
+  el.textContent= days===1 ? 'Falta 1 día' : 'Faltan '+days+' días';
+})();
+</script>
+</body>
+</html>
